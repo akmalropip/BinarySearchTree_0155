@@ -135,5 +135,41 @@ int main()
         cin >> ch;
         cout << endl;
 
-        
+        //membuat conditional statement dari input ch
+        switch (ch)
+        {
+            case '1':
+            {
+                cout << "Enter a word : ";
+                string word;
+                cin >> word;
+                x.insert(word);
+                break;
+            }
+            case '2':
+            {
+                x .inorder(x.root);
+                break;
+            }
+            case '3':
+            {
+                x.preorder(x.root);
+                break;
+            }
+            case '4':
+            {
+                x.postorder(x.root);
+                break;
+            }
+            case '5':
+            {
+                return 0;
+            }
+            default: {
+                cout << "Invalid option" << endl;
+                break;
+            }
+        }
+    }
+} 
 

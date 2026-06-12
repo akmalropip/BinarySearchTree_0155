@@ -32,6 +32,7 @@ class BinaryTree {
     }
 
     void insert(string element) {
+        //memberi nilai untuk setiap object node yang dibuat
         Node* newNode = new Node(element, nullptr, nullptr);
         newNode->info = element;
         newNode->leftchild = nullptr;
@@ -40,6 +41,14 @@ class BinaryTree {
         Node* parent = nullptr;
         Node* currentNode = nullptr;
         search(element, parent, currentNode);
+
+        //membuat conditional statement
+        Node* paraent = nullptr;
+        Node* currentNode = nullptr;
+        search(element, parent, currentNode);
+
+        
+
     }
 }
 

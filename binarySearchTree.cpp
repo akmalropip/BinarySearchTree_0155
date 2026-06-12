@@ -9,3 +9,14 @@ class Node {
     string info;
     Node* leftchild;
     Node* rightchild;
+
+    //membuat constructor untuk class Node
+    Node(string i, Node* 1, Node* r) {
+        //memberi nilai parameter ke variabel
+        info = i;
+        leftchild = 1;
+        rightchild = r;
+    }
+
+};
+

@@ -47,8 +47,37 @@ class BinaryTree {
         Node* currentNode = nullptr;
         search(element, parent, currentNode);
 
-        
+        //membuat conditional statement
+        if (parent == nullptr) {
+            root = newNode;
+            return;
+        }
+
+        if (element < parent->info)
+        {
+            parent->leftchild = newNode;
+        }
+        else if (element > parent->info) 
+        {
+            parent->rightchild = newNode;
+        }
 
     }
+
+    void search(string element, Node*& parent, Node*& currentNode) {
+        currentNode = root;
+        parent = nullptr;
+        while ((currentNode != nullptr) && (currentNode->info != element))
+        {
+
+            parent = currentNode;
+            if (element < currentNode->info) 
+                currentNode = currentNode->leftchild;
+                 else
+                  currentNode = currentNode->rightchild;
+        }
+    }
+
+    
 }
 
